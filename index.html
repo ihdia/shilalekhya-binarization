@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Unveiling Text in Challenging Stone Inscriptions: A Character-Context-Aware Patching Strategy for Binarization.">
+  <meta name="keywords" content="Binarization, Inscriptions, Stone Inscriptions, Character Context Aware, Patching Strategy, Indic, Kannada, Binarizer, IHDIA, ICVGIP, ICDAR, ICVGIP 2025">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shilalekhya Binarization</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/1630643899289.jpeg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="http://ihdia.iiit.ac.in">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/ihdia">
+              HDIA Group
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- START ---   SECTION - TITLE -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Unveiling Text in Challenging Stone Inscriptions: A Character-Context-Aware Patching Strategy for Binarization</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/pratyush-jena-13b075170/">Pratyush Jena</a>,</span>
+              <span class="author-block">
+                <a href="https://amaljoseph.github.io/">Amal Joseph</a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/arnav-sharma-584841284">Arnav Sharma</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://ravika.github.io/">Ravi Kiran Sarvadevabhatla</a>,
+              </span>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Center for Visual Information Technology (CVIT)</span>
+              <span class="author-block">International Institute of Information Technology,Hyderabad</span>
+            </div>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2011.12948"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+                <!-- Video Link. ********************************************************************************-->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ihdia/shilalekhya-binarization"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+                <!-- Dataset Link. ********************************************************************************-->
+                <span class="link-block">
+                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                    </a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- END ---   SECTION - TITLE -->
+
+
+
+
+
+  <!-- START ---   SECTION - VIDEO TEASER -->
+  <section class="hero teaser">
+    <div class="container">
+      <div class="hero-body">
+        <img src="static/images/inscription_examples.png" alt="">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/1711_final_2mins.mp4" type="video/mp4">
+        </video> -->
+        <h2 class="subtitle has-text-centered">
+          Sample images and their corresponding binarization ground truth from the annotated stone inscription dataset. Notice the difficulty
+distinguishing the shallow handwritten text etching from the background stone texture with naked eye
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- END ---   SECTION - VIDEO TEASER -->
+
+
+  <!-- START ---   SECTION - ABSTRACT -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Stone inscription images pose severe challenges for binarization due to poor contrast between etched characters and the
+              stone background, non-uniform surface degradation, distracting artifacts, and highly variable text density and layouts. 
+              These conditions frequently cause existing binarization techniques to fail and struggle to isolate coherent character regions. 
+              Many approaches sub-divide the image into patches to improve text fragment resolution and improve binarization performance. 
+              With this in mind, we present a robust and adaptive patching strategy to binarize challenging Indic inscriptions.
+            </p>
+            <p>
+               The patches from our approach are used to train an Attention U-Net for binarization. The attention
+              mechanism allows the model to focus on subtle structural cues, while our dynamic sampling and patch selection method ensures
+              that the model learns to overcome surface noise and layout irregularities. We also introduce a carefully annotated, pixel-precise
+              dataset of Indic stone inscriptions at the character-fragment level. We demonstrate that our novel patching mechanism significantly
+              boosts binarization performance across classical and deep learning baselines. 
+            </p>
+            <p>
+              <!-- We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie -->
+              Despite training only on single script Indic dataset, our model exhibits strong zero-shot generalization to other Indic and non-indic scripts, 
+              highlighting its robustness and script-agnostic generalization capabilities. By producing clean, structured representations of inscription content, 
+              our method lays the foundation for downstream tasks such as script identification, OCR, and historical text analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+  
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+      <!--/ Paper video. -->
+    </div>
+  </section>
+  <!-- END ---   SECTION - ABSTRACT -->
+
+  <!-- START ---   SECTION - METHOD -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Network Architecture . -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3"><i>Why Patch Size Matter?</i></h2>
+          <figure>
+            <img src="./static/images/PatchesComparison.png" alt="method" style="width: 100%;" />
+            <figcaption>
+              Our Character-Context-Aware Patching produce patches of
+good context, where the amount of textual information is consistent
+across the patches. Notice the character height is similar across the
+patches relative to the patch dimensions with our patching method.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END ---   SECTION - ARCHITECTURE -->
+
+
+  <!-- START ---   SECTION - METHOD -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Network Architecture . -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Proposed Approach: Shilalekhya Binarization</h2>
+          <div class="content has-text-justified">
+            <p>
+              We propose a novel, spatially adaptive, Character-Context-Aware
+              patching mechanism. The resulting patches are used to
+              train a binarization network. At test time, a self-refining inference pipeline 
+              is used to intelligently mimic the trainingtime strategy, thereby enabling robust binarization.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ROW 3 - Zeroshot Results -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">Character-Context-Aware Patching</h2>
+          <p>
+            Our novel patching strategy uses the character components size to set the patch size and is inherently adaptive to the specific content of each image. 
+            The character component height is estimated from the ground truth masks and the pixels are grouped to foreground (text) and background (stone texture) using morphological dilation with an adaptive kernel. 
+            Patches are sampled from the foreground and background regions at multiple scales based on the character height ensuring that characters always appear at a consistent scale. 
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/patching_adaptivity.drawio.png" alt="Zero-shot result from SM." style="width: 100%;" />
+          </figure>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <p>
+            Our patching strategy teaches the model to “see” inscriptions the way humans do — by focusing on meaningful character regions at the right scale while also learning how the surrounding stone texture looks. It builds a more robust and context-aware foundation for the binarization model that follows.
+          </p>
+        </div>
+      </div>
+
+
+
+<!-- ROW 3 - Zeroshot Results -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">Self-Refining Inference Pipeline</h2>
+          <p>
+            During inference, the trained Attention U-Net is applied in a two-stage process to achieve accurate binarization of unseen stone inscription images.
+          </p>
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <figure>
+                <img src="./static/images/inference_pipeline_2.drawio.png" alt="Zero-shot result from SM." style="width: 100%;" />
+              </figure>
+            </div>
+          </div>
+
+          <p><b>Stage 1 – Initial Prediction</b></p>
+          <p>
+            The image is processed at multiple scales (256, 384, 512, 768 px) using a sliding-window approach. 
+            For each pixel, the maximum prediction probability across scales is taken to form a coarse binary map. 
+            This map serves as a pseudo-ground truth that roughly identifies text regions, guiding the next stage.
+          </p>
+
+          <p><b>Stage 2 – Context-Aware Refinement</p></b>
+          <p>
+            The coarse map is used to apply the Character-Context-Aware Patching strategy for better sampling of text and background regions at optimal scales.
+            These refined patches are reprocessed through the same Attention U-Net to produce the final binarized output.
+            This stage reduces false positives and improves text boundary coherence.
+          </p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- END ---   SECTION - ARCHITECTURE -->
+
+
+
+
+
+
+
+
+  <!-- START ---   SECTION - QUALITATIVE RESULTS -->
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered">
+          <h2 class="title is-3">Qualitative Results</h2>
+        </div>
+      </div>
+      <!-- ROW 1 - curved text lines -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <p>
+            Qualitative Comparison between our method and other approaches. From left to right, the input inscription image and ground truth
+mask, and the predictions by <i>Otsu</i>, <i>Savoula</i>, <i>FCN</i>, <i>NAF-DPM</i> and <b>our model</b>. The characters restored by our network are
+clearly more readable and accurate.
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/Inference_results.drawio.png"
+              alt="Example inference result from various models." style="width: 90%;" />
+            <figcaption style="font-style: italic;">
+              
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+
+      <!-- ROW 3 - Zeroshot Results -->
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">Zero-shot Results</h2>
+          <p>
+            Demonstration of our model’s robust zero-shot generalization. Examples are from challenging, in-the-wild Indic and <a href="https://dl.acm.org/doi/abs/10.1007/978-3-031-70442-0_24">Byzantine-era
+Medieval Greek inscriptions</a>. Despite significant variations in script, lighting, and surface degradation, our method consistently produces
+clean, legible binarizations. Note: The predicted binary maps are overlaid on the inscriptions
+          </p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/ZeroShotExamples.drawio2.png" alt="Zero-shot result from SM." style="width: 100%;" />
+          </figure>
+        </div>
+      </div>
+
+
+
+      <!-- ROW 4 - OOD Results ************************************************************************************************************-->
+      <!-- <div class="columns is-centered">
+        <div class="column is-full">
+          <h2 class="title is-5">LineTR generalizes well!</h2>
+          <p>Even though LineTR was trained only on palm leaf manuscripts, it is able to generalize to documents well
+            outside its domain.</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/ood/2_icdar2017_1.jpg" alt="ICDAR2017 dataset prediction 1" style="width: 60%;" />
+            <figcaption style="font-style: italic;">
+              ICDAR2017 HTR dataset
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column">
+          <figure>
+            <img src="./static/images/ood/icdar2017_2.jpeg" alt="ICDAR2017 dataset prediction 2" style="width: 60%;" />
+            <figcaption style="font-style: italic;">
+              ICDAR2017 HTR dataset
+            </figcaption>
+          </figure>
+        </div>
+      </div> -->
+
+
+    </div>
+  </section>
+
+  <!-- END ---   SECTION - QUALITATIVE RESULTS -->
+
+  <!-- START ---   SECTION - QUANTITATIVE RESULTS -->
+  <section class="section" id="quantitative-results">
+    <div class="container is-max-desktop">
+      <!-- ROW 4 - RESULTS TABLE -->
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered">
+          <h2 class="title is-3">Quantitative Results</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure>
+            <img src="./static/images/results_table.png"
+              alt="Comparative evaluation of ShilaLekhya against baseline models using benchmark datasets."
+              style="width: 100%;" />
+            <figcaption>Comparison of models and patching strategies on Test Set and Zero-shot dataset</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- END ---   SECTION - QUANTITATIVE RESULTS -->
+
+
+  <!-- START ---   SECTION - BIBTEXT -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{jena2025inscription,
+    author    = {Jena, Pratyush and Joseph, Amal and Sharma Arnav and Sarvadevabhatla, Ravi Kiran},
+    title     = {Unveiling Text in Challenging Stone Inscriptions: A Character-Context-Aware Patching Strategy for Binarization},
+    journal   = {ICVGIP},
+    year      = {2025},
+  }</code></pre>
+    </div>
+  </section>
+
+  <section class="section" id="Contact">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Contact</h2>
+      <div class="content has-text-justified">
+        <p>
+          If you have any question, please contact Dr. Ravi Kiran Sarvadevabhatla at ravi.kiran@iiit.ac.in.
+        </p>
+      </div>
+  </section>
+  <!-- END ---   SECTION - BIBTEXT -->
+
+
+
+  <!-- START ---   SECTION - FOOTER -->
+  <footer class="footer">
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content is-8">
+          This website templated is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END ---   SECTION - FOOTER -->
+</body>
+
+</html>
