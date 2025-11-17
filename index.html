@@ -48,10 +48,10 @@
           <a class="navbar-link">
             More Research
           </a>
+
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://github.com/ihdia">
-              HDIA Group
-            </a>
+            <a class="navbar-item" href="https://ihdia.iiit.ac.in/episam">EpiSAM</a>
+            <a class="navbar-item" href="https://ihdia.iiit.ac.in/">HDIA Group</a>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2011.12948"
+                  <a href="static/pdfs/Shilalkehya_Inscription_Binarizer - Text_Segmentation_in_Stone_Inscriptions.pdf"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -95,7 +95,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2011.12948"
+                  <a href="static/pdfs/Supplementary___Shilalekhya_Inscription_Binarizer.pdf"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -104,7 +104,7 @@
                   </a>
                 </span>
                 <!-- Video Link. ********************************************************************************-->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -112,7 +112,7 @@
                     </span>
                     <span>Video</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/ihdia/shilalekhya-binarization"
@@ -125,12 +125,12 @@
                 </span>
                 <!-- Dataset Link. ********************************************************************************-->
                 <span class="link-block">
-                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                  <a href="#dataset"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="far fa-images"></i>
                     </span>
-                    <span>Data</span>
+                    <span>Dataset</span>
                     </a>
               </div>
   
@@ -440,17 +440,35 @@ clean, legible binarizations. Note: The predicted binary maps are overlaid on th
   </section>
 <!-- END ---   SECTION - QUANTITATIVE RESULTS -->
 
+  <!-- START ---   SECTION - QUANTITATIVE RESULTS -->
+  <section class="section" id="dataset">
+    <div class="container is-max-desktop">
+      <h2 class="title">Dataset</h2>
+
+          <p>The Shilalekhya Inscription Binarization Dataset will be made publically available soon.</p>
+    </div>
+  </section>
+<!-- END ---   SECTION - QUANTITATIVE RESULTS -->
+
+
+
 
   <!-- START ---   SECTION - BIBTEXT -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{jena2025inscription,
-    author    = {Jena, Pratyush and Joseph, Amal and Sharma, Arnav and Sarvadevabhatla, Ravi Kiran},
-    title     = {Unveiling Text in Challenging Stone Inscriptions: A Character-Context-Aware Patching Strategy for Binarization},
-    journal   = {ICVGIP},
-    year      = {2025},
-  }</code></pre>
+      <pre><code>
+@inproceedings{jena2025inscription,
+  author    = {Pratyush Jena and Amal Joseph and Arnav Sharma and Ravi Kiran Sarvadevabhatla},
+  title     = {Unveiling Text in Challenging Stone Inscriptions: A Character-Context-Aware Patching Strategy for Binarization},
+  booktitle = {Indian Conference on Computer Vision, Graphics, and Image Processing (ICVGIP 2025)},
+  year      = {2025},
+  address   = {Mandi, India},
+  doi       = {10.1145/3774521.3774539},
+  isbn      = {979-8-4007-1930-1/25/12},
+  note      = {To appear}
+}
+      </code></pre>
     </div>
   </section>
 
