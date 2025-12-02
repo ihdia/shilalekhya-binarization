@@ -1,0 +1,1 @@
+![shilalekhya Binarization](https://ihdia.iiit.ac.in/shilalekhya-binarization/)
