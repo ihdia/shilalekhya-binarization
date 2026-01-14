@@ -174,7 +174,16 @@ The script will process each image in the `input_dir` and save the binarized out
 If you use this code in your research, please cite our paper:
 
 ```
-[To be filled]
+@inproceedings{jena2025inscription,
+  author    = {Pratyush Jena and Amal Joseph and Arnav Sharma and Ravi Kiran Sarvadevabhatla},
+  title     = {Unveiling Text in Challenging Stone Inscriptions: A Character-Context-Aware Patching Strategy for Binarization},
+  booktitle = {Indian Conference on Computer Vision, Graphics, and Image Processing (ICVGIP 2025)},
+  year      = {2025},
+  address   = {Mandi, India},
+  doi       = {10.1145/3774521.3774539},
+  isbn      = {979-8-4007-1930-1/25/12},
+  note      = {To appear}
+}
 ```
 
 ## License
